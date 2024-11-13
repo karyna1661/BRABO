@@ -1,0 +1,54 @@
+/* Animation Keyframes */
+@keyframes cardGlow {
+    0% { box-shadow: 0 0 5px var(--primary); }
+    50% { box-shadow: 0 0 20px var(--primary); }
+    100% { box-shadow: 0 0 5px var(--primary); }
+}
+
+@keyframes claimPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Enhanced Reward Card Styles */
+.reward-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.reward-card.card-glow {
+    animation: cardGlow 2s infinite;
+}
+
+.reward-card.claiming {
+    animation: claimPulse 0.5s ease-in-out;
+}
+
+.reward-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.reward-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+}
+
+.reward-badge:hover {
+    transform: rotate(0deg) scale(1.1);
+}
