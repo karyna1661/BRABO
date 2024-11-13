@@ -1,0 +1,105 @@
+.hero {
+    margin-top: 64px;
+    min-height: 80vh;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl) var(--space-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../assets/images/hero-bg.jpg') center/cover;
+    opacity: 0.1;
+    transform: scale(1.1);
+    animation: slowZoom 20s infinite alternate;
+}
+
+@keyframes slowZoom {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.2); }
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: var(--space-xl);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: var(--space-lg);
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-content p {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin-bottom: var(--space-xl);
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .hero-content {
+        padding: var(--space-lg);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        padding: 0 var(--space-lg);
+        gap: var(--space-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        text-align: left;
+    }
+    
+    .hero-content {
+        padding: var(--space-md);
+    }
+}
