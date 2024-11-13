@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balon d'Farcaster | Football-themed Social Ranking</title>
+    
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modules/navbar.css">
+    <link rel="stylesheet" href="css/modules/hero.css">
+    <link rel="stylesheet" href="css/modules/leaderboard.css">
+    <link rel="stylesheet" href="css/modules/nft-gallery.css">
+    <link rel="stylesheet" href="css/modules/profile.css">
+    <link rel="stylesheet" href="css/modules/footer.css">
+</head>
+<body>
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/icons/trophy.svg" alt="Trophy" class="nav-logo">
+                <h1>Balon d'Farcaster</h1>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="hamburger-icon"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                <a href="#nft-gallery" class="nav-link">NFTs</a>
+                <a href="#profile" class="nav-link">Profile</a>
+                <button class="connect-wallet">
+                    <img src="assets/icons/wallet.svg" alt="Wallet">
+                    Connect Wallet
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Where Football Meets Web3</h1>
+                <p>Compete, collect, and climb the ranks in the world's first football-themed social ranking system</p>
+                <div class="hero-cta">
+                    <button class="btn-primary">Start Playing</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="leaderboard" class="leaderboard">
+            <div class="leaderboard-header">
+                <h2>Top Performers</h2>
+                <div class="leaderboard-filters">
+                    <button class="filter-btn active">Weekly</button>
+                    <button class="filter-btn">Monthly</button>
+                    <button class="filter-btn">All Time</button>
+                </div>
+            </div>
+            <div class="leaderboard-table">
+                <div class="table-row table-header">
+                    <div>Rank</div>
+                    <div>Player</div>
+                    <div>Goals</div>
+                    <div class="hide-mobile">Assists</div>
+                    <div class="hide-mobile">Value</div>
+                </div>
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </section>
+
+        <section id="nft-gallery" class="nft-gallery">
+            <div class="gallery-header">
+                <h2>Football Legend NFTs</h2>
+                <p>Collect unique NFTs based on your performance</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </section>
+
+        <section id="profile" class="profile-section">
+            <div class="profile-container">
+                <aside class="profile-sidebar">
+                    <div class="profile-avatar-wrapper">
+                        <img src="assets/images/profile-avatar.jpg" alt="Profile" class="profile-avatar">
+                        <span class="profile-rank-badge">#12</span>
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="profile-name">Alex Thompson</h2>
+                        <div class="profile-style">
+                            <h3>Plays Like: Messi</h3>
+                            <p>Style Match: 85%</p>
+                        </div>
+                        <div class="profile-stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-value">156</div>
+                                <div class="stat-label">Goals</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">89</div>
+                                <div class="stat-label">Assists</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="profile-content">
+                    <section class="achievements-section">
+                        <h3>Achievements</h3>
+                        <div class="achievement-grid">
+                            <!-- Dynamic content will be inserted here -->
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/icons/trophy.svg" alt="Trophy" class="footer-logo">
+                <p>Balon d'Farcaster</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
