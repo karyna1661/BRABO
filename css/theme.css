@@ -1,0 +1,60 @@
+:root {
+    /* Brand Colors */
+    --purple-50: #FAF5FF;
+    --purple-100: #E9D8FD;
+    --purple-500: #805AD5;
+    --purple-600: #6B46C1;
+    --purple-700: #553C9A;
+    
+    /* Neutral Colors */
+    --gray-50: #F7FAFC;
+    --gray-100: #EDF2F7;
+    --gray-700: #2D3748;
+    --gray-800: #1A202C;
+    
+    /* Status Colors */
+    --success: #48BB78;
+    --warning: #ECC94B;
+    --error: #F56565;
+    
+    /* Functional Colors */
+    --primary: var(--purple-600);
+    --primary-hover: var(--purple-700);
+    --background: var(--gray-50);
+    --text: var(--gray-800);
+    --surface: white;
+    --surface-hover: var(--gray-100);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--purple-500), var(--purple-700));
+    --gradient-dark: linear-gradient(180deg, var(--gray-700), var(--gray-800));
+    
+    /* Spacing System */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+    --transition-fast: all 0.15s ease;
+    
+    /* Z-index Layers */
+    --z-modal: 1000;
+    --z-overlay: 900;
+    --z-dropdown: 800;
+    --z-nav: 100;
+}
