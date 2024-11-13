@@ -1,0 +1,19 @@
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--space-xl);
+}
+
+.chart-wrapper {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.performance-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
